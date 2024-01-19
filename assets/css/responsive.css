@@ -47,6 +47,7 @@
   .main-header .outer-box .logo-box{
     margin-top: 0px;
     padding: 31px 30px !important;
+    background-color: white !important;
   }
 
   .main-header .outer-box .logo-box:before,
