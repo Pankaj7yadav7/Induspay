@@ -71,33 +71,33 @@ form {
   margin: 10px 0;
   height: 55px;
   border-radius: 55px;
-  display: grid;
-  grid-template-columns: 15% 85%;
+  display:grid;
+  grid-template-columns: 12% 65%;
   padding: 0 0.4rem;
   position: relative;
 }
 
 .input-field i {
   text-align: center;
-  line-height: 55px;
+  line-height: 65px;
   color: #acacac;
   transition: 0.5s;
-  font-size: 1.1rem;
+  font-size: 0.8rem;
 }
 
 .input-field input {
   background: none;
   outline: none;
   border: none;
-  line-height: 1;
-  font-weight: 600;
-  font-size: 1.1rem;
+  line-height: 4.5;
+  font-weight: 300;
+  font-size: 0.9rem;
   color: #333;
 }
 
 .input-field input::placeholder {
   color: #aaa;
-  font-weight: 500;
+  font-weight: 300;
 }
 .btn {
   width: 150px;
@@ -112,6 +112,10 @@ form {
   margin: 10px 0;
   cursor: pointer;
   transition: 0.5s;
+}
+
+.gender {
+    padding: 13px;
 }
 
 .btn:hover {
@@ -185,24 +189,36 @@ form {
               </div>
               <div class="input-field">
                 <i class="fas fa-lock"></i>
-                <input type="text" placeholder="Gender" />
+              <div class="gender">
+                <input type="radio" value="male" >
+                <span class="male">Male</span>
+                <input type="radio" value="female">
+                <span class="male">Female</span>
+                <input type="radio" value="Others">
+                <span class="male">Others</span>
+              </div>
               </div>
               <div class="input-field">
                 <i class="fas fa-lock"></i>
-                <input type="text" placeholder="Date of Birth" />
+                <input type="date" placeholder="Date of Birth" />
               </div>
               <div class="input-field">
                 <i class="fas fa-lock"></i>
-                <input type="text" placeholder="Permanent Address" />
+                <input type="text" placeholder=" Address" />
               </div>
               <div class="input-field">
-                <i class="fas fa-lock"></i>
-                <input type="text" placeholder="Current Address" />
+              PAN Card<input type="file" />
               </div>
-              <div class="input-field">
+              <!-- <div class="input-field">
                 <i class="fas fa-lock"></i>
                 <input type="text" placeholder="Aadhar No" />
+              </div> -->
+              <div class="input-field">
+                <label>Aadhar Card </label>
+              <input type="file" />
               </div>
+              
+
               <div class="input-field">
                 <i class="fas fa-lock"></i>
                 <input type="text" placeholder="State" />
