@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,12 +12,33 @@
             margin: 20px;
         }
 
+        .container{
+            background-image: url(./assets/images/background/service-bg-3.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        .form-control {
+            top: 20%;
+            left: 23%;
+            padding: 40px 50px 50px;
+            border-radius: 30px;
+        }
+
+        .form-control h2 {
+            color: #e80909;
+            text-align: center;
+            font-size: 40px;
+        }
+
         form {
+
             max-width: 600px;
             margin: 0 auto;
             background-color: #fff;
             padding: 20px;
-            border-radius: 8px;
+            border-radius: 30px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
@@ -33,19 +55,27 @@
             margin-bottom: 16px;
             box-sizing: border-box;
             border: 1px solid #ccc;
-            border-radius: 4px;
+            border-radius: 25px;
             background-color: #f9f8f8;
         }
 
         button {
+            background-color: #e80909;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+        button:hover {
             background-color: #4caf50;
             color: #fff;
             padding: 10px 15px;
             border: none;
-            border-radius: 4px;
+            border-radius: 15px;
             cursor: pointer;
         }
-        
+
 
         /* Responsive Styles */
         @media only screen and (max-width: 600px) {
@@ -55,43 +85,47 @@
         }
     </style>
 </head>
+
 <body>
-<div class="form-control">
-    <form action="submit_kyc.php" method="post">
-        <h2>KYC Form</h2>
+    <div class="container">
+        <div class="form-control">
+            <form action="submit_kyc.php" method="post">
+                <h2>KYC Form</h2>
 
-        <!-- Personal Information -->
-        <label for="full_name">Full Name:</label>
-        <input type="text" id="full_name" name="full_name" required>
+                <!-- Personal Information -->
+                <label for="full_name">Full Name:</label>
+                <input type="text" id="full_name" name="full_name" required>
 
-        <label for="dob">Date of Birth:</label>
-        <input type="date" id="dob" name="dob" required>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
 
-        <label for="address">Address:</label>
-        <textarea id="address" name="address" required></textarea>
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" required></textarea>
 
-        <!-- Additional KYC Information -->
-        <label for="id_type">ID Type:</label>
-        <select id="id_type" name="id_type" required>
-            <option value="passport">Passport</option>
-            <option value="driver_license">Driver's License</option>
-            <option value="national_id">National ID</option>
-        </select>
+                <!-- Additional KYC Information -->
+                <label for="id_type">ID Type:</label>
+                <select id="id_type" name="id_type" required>
+                    <option value="passport">Passport</option>
+                    <option value="driver_license">Driver's License</option>
+                    <option value="national_id">National ID</option>
+                </select>
 
-        <label for="id_number">ID Number:</label>
-        <input type="text" id="id_number" name="id_number" required>
+                <label for="id_number">ID Number:</label>
+                <input type="text" id="id_number" name="id_number" required>
 
-        <label for="Adhar">Adhar Card:</label>
-        <input type="file" id="Aadhar" name="Aadhar Card" required>
-        
-        <label for="Adhar">PAN Card:</label>
-        <input type="file" id="PAN" name="PAN Card" required>
+                <label for="Adhar">Adhar Card:</label>
+                <input type="file" id="Aadhar" name="Aadhar Card" required>
+
+                <label for="Adhar">PAN Card:</label>
+                <input type="file" id="PAN" name="PAN Card" required>
 
 
-        <!-- Submit Button -->
-        <button type="submit">Submit KYC</button>
-    </form>
-  </div>
+                <!-- Submit Button -->
+                <button type="submit">Submit KYC</button>
+            </form>
+        </div>
+    </div>
 
 </body>
+
 </html>

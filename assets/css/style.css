@@ -229,7 +229,7 @@ input,button,select,textarea{
   color: inherit;
 }
 
-ul,li{
+ul {
   list-style:none;
   padding:0px;
   margin:0px; 
